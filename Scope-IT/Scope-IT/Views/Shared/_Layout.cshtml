@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope-IT</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/umd/popper.min.js"></script>
+    <script src="~/Scripts/Custom/scrolling-nav.js"></script>
+    <script src="~/Scripts/Custom/parallax.js"></script>
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-transparent" id="scrollNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <img style="max-height:50px;" src="~/Content/Images/lg5.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Zakres usług</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="parallax-logo" data-parallax="scroll" data-image-src="@Url.Content("~/Content/Images/network-2402637_1280.jpg")"></div>
+        <div class="container" style="position:relative;">
+            <div class="initial-page-title">Obsługa informatyczna firm</div>
+        </div>
+    </header>
+
+    <div id="main">
+        <section id="about">
+            <div class="container">
+                <h3>O nas</h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus, dolor ac venenatis tempus,
+                    felis ligula pretium mauris, ut posuere risus neque vel nulla. Sed ac dui viverra, dignissim tortor eu,
+                    tincidunt urna. Praesent feugiat dignissim mi sed imperdiet. Integer a suscipit eros. Aenean eget augue quam.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eros tellus,
+                    rhoncus in malesuada eget, malesuada in ipsum. Morbi vel felis dolor. Ut consectetur, ex sed sodales malesuada,
+                    orci elit eleifend justo, eu faucibus lorem libero in nibh. Nunc vitae consectetur elit. Nulla facilisi.
+                </p>
+            </div>
+        </section>
+
+        <section id="services" class="bg-light">
+            <div class="container">
+                <h3>Zakres usług</h3>
+                <p>Zajmujemy się kompleksową obsługą informatyczną firm.</p>
+            </div>
+        </section>
+        
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="@Url.Content("Content/Images/writing-1149962_1280.jpg")">
+            <div class="container">
+                <p class="image-text">RODO</p>
+            </div>
+        </div>
+
+        <section class="bg-light">
+            <div class="container">
+                <h3>Zakres usług</h3>
+            </div>
+        </section>
+
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="@Url.Content("Content/Images/laptop-1385700_1280.jpg")">
+            <div class="container">
+                <p class="image-text">Helpdesk</p>
+            </div>
+        </div>
+
+        <section class="bg-light">
+            <div class="container">
+                <h4>Pomoc zdalna lub na miejscu u klienta</h4>
+                <h4>Pomoc przy wyborze i zakupie sprzętu oraz oprogramowania (przygotowywanie ofert)</h4>
+                <h4>Audyty, doradztwo przy wyborze rozwiązań IT</h4>
+                <h4>Wdrożenia i obsługa oprogramowania</h4>
+            </div>
+        </section>
+            
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="@Url.Content("Content/Images/cyberspace-2784907_1280.jpg")">
+            <div class="container">
+                <p class="image-text">Monitoring sieci</p>
+            </div>
+        </div>
+
+        <section class="bg-light">
+            <div class="container">
+                <h4>Projektowanie i tworzenie nowych sieci komputerowych</h4>
+            </div>
+        </section>
+
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="@Url.Content("Content/Images/binary-2326144_1280.jpg")">
+            <div class="container">
+                <p class="image-text">Bezpieczeństwo danych</p>
+            </div>
+        </div>
+
+        <section class="bg-light">
+            <div class="container">
+                <h4>Administracja serwerami</h4>
+                <h4>Kopie zapasowe (danych użytkowników oraz danych na serwerze)</h4>
+            </div>
+        </section>
+
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="@Url.Content("Content/Images/mapa-dojazdu-kontrast.jpg")">
+            <div class="container">
+                <section id="contact">
+                    @RenderBody()
+                </section>
+            </div>
+        </div>
+
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <span class="col-md-4 text-left text-white">Logo firmy</span>
+                    <p class="col-md-4 text-center text-white">&copy; scope-IT @DateTime.Now.Year</p>
+                    <span class="col-md-4 text-right text-white">Linki do kont społecznościowych</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿header {
+    height: 100vh;
+}
+
+.initial-page-title {
+    position: absolute;
+    bottom: 12vh;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.image-text {
+    z-index: 2;
+    position: relative;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.parallax-logo {
+    height: 100vh;
+    background: transparent;
+}
+
+.navbar-dark {
+    color: white;
+}
+
+.navbar-transparent {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+    .navbar-transparent .navbar-nav li a {
+        color: white;
+        font-weight: bold;
+    }
+
+        .navbar-transparent .navbar-nav li a:hover {
+            color: grey;
+        }
+
+
+body {
+    position: relative;
+}
+
+#main {
+    position: relative;
+    background-color: white;
+}
+
+section {
+    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    padding: 10px;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.transparent-input {
+    background-color: rgba(255,255,255,0.7) !important;
+    /*background-color: rgba(0,0,0,0) !important;*/
+    /*border: none !important;*/
+}
